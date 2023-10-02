@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list lines="none">
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="https://images.thedirect.com/media/article_full/avatar-s.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>John Doe</h2>
+        <p>Gathered: <span class="money">$6,000</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <app-pickup-call-card [hasHeader]="true" [hasFooter]="true"></app-pickup-call-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

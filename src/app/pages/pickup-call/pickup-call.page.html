@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pickup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <img src="https://www.google.com/maps/vt/data=QjNEHlXQk0TKzIxeRnYiYbNlNhPEXXNJz0G1_y7vAeDJdWCXmPHn3TKVzSmMJ7NuY0ba3l0qdWtbkoJ6GluFXDLd-xB_aFyur2hEXihcT1h7N9Byf1dC8AEWpxfcVdswOE6nQIjh7HL04PX5Yvyt5Jm0z-t5euJEqGpkgkgBtfABNFdeGYJYSKIB_MNboBfoVnzCJWexgTgF-I5XIpLJHemWE0l-JIuwXcBVwyRzAFF_KmqTPwvnB_Ntan1_CcJ2B8bY15c7Ka0xK_mjijrCG8D8Fg" alt="map" class="map">
+  <ion-card>
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label>
+            <p>Address: 6038 Bato, Toledo City, Cebu</p>
+            <p>Complement: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex earum similique assumenda debitis dolor, sed possimus nulla odio. Nam minus dolorem ea reprehenderit consequatur quibusdam quae vel vitae laborum?</p>
+            <p>Neighborhood: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex earum similique assumenda debitis dolor, sed possimus nulla odio. Nam minus dolorem ea reprehenderit consequatur quibusdam quae vel vitae laborum?
+            <p>Zip Code: 6038</p>
+            <p>City: Toledo</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-list>
+    <ion-item>
+      <ion-textarea label="Notes" labelPlacement="floating" placeholder="Notes"></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" color="success">Pickup</ion-button>
+</ion-content>

@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="success">
+  <!-- <ion-card>
+    <ion-card-header>
+      <ion-card-title>Register</ion-card-title>
+      <ion-card-subtitle>
+        To continue, please register.
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-radio-group value="strawberries">
+        <ion-item>
+          <ion-label>Choice 1</ion-label>
+          <ion-radio slot="start" value="strawberries"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Choice 2</ion-label>
+          <ion-radio slot="start" value="blueberries"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card> -->
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Personal Information</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input label="Name" labelPlacement="floating" placeholder="Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Email" labelPlacement="floating" placeholder="Email Address"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Phone" labelPlacement="floating" placeholder="Phone Number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Password" labelPlacement="floating" placeholder="Password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Confirm Password" labelPlacement="floating" placeholder="Confirm Password"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Address Information</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input label="Address" labelPlacement="floating" placeholder="Address"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="City" labelPlacement="floating" placeholder="City"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="State" labelPlacement="floating" placeholder="State"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Zip" labelPlacement="floating" placeholder="Zip"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" color="light" routerLink="/home">Register</ion-button>
+</ion-content>
