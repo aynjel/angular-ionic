@@ -6,13 +6,15 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./pickup-call-card.component.scss'],
 })
 export class PickupCallCardComponent  implements OnInit {
-  @Input() hasHeader: boolean;
-  @Input() hasFooter: boolean;
+  @Input() hasHeader: boolean = false;
+  @Input() hasFooter: boolean = false;
+  @Input() status: string = 'hold';
+  @Input() updatedAt: string = '';
+  @Input() createdAt: string = '';
+  @Input() notes: string = '';
+  @Input() money: string = '';
 
-  constructor() {
-    this.hasHeader = true;
-    this.hasFooter = true;
-  }
+  constructor() { }
 
   ngOnInit() {}
 
